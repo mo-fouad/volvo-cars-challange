@@ -1,0 +1,1 @@
+export { getCarouselCars } from "./getCarsApi";
