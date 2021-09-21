@@ -10,5 +10,12 @@ interface BaseImageTypes {
 export function BaseImage({ src, extend }: BaseImageTypes) {
   const { css } = useFela();
 
-  return <img src={src} alt="" className={extend ? css(extend) : ""} />;
+  return (
+    <img
+      src={src}
+      alt=""
+      role="presentation"
+      className={extend ? css(extend) : ""}
+    />
+  );
 }

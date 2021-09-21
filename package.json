@@ -13,6 +13,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "3.4.4",
+    "swiper": "6.8.2",
     "typescript": "~3.7.2",
     "vcc-ui": "^2.10.2"
   },
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/swiper": "^5.4.3"
   }
 }
