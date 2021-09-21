@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Navigation } from "swiper";
-import "./CarCarouselCSS.css";
+import "./CarCarouselStyles.scss";
 
 SwiperCore.use([Pagination]);
 SwiperCore.use([Navigation]);

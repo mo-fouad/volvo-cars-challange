@@ -1,0 +1,68 @@
+
+@import "~swiper/swiper.scss";
+@import '~swiper/components/navigation/navigation.scss';
+@import '~swiper/components/pagination/pagination.scss';
+
+$breakpoint-tablet: 48rem;
+
+/*// override buttons CSS */
+
+.swiper {
+    &-container {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
+
+    &-slide {
+        width: 300px;
+    }
+
+    &-pagination {
+        bottom: 2rem !important;
+    }
+
+    &-button {
+        &-next, &-prev {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #000;
+            &:after {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: #000;
+            }
+
+        }
+        &-prev {
+            bottom: 0;
+            right: 0;
+            left: auto;
+            top: auto;
+            margin-right: 60px;
+        }
+        &-next {
+            bottom: 0;
+            right: 0;
+            top: auto;
+        }
+
+    }
+    &-pagination {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: $breakpoint-tablet) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .swiper-pagination {
+        display: block;
+    }
+}

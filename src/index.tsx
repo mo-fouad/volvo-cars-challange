@@ -1,11 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { StyleProvider, ThemePicker } from "vcc-ui";
+import { styleRenderer, StyleProvider, ThemePicker } from "vcc-ui";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+const renderer = styleRenderer();
+
+renderer.renderStatic(
+  {
+    outline: 0,
+  },
+  "a"
+);
+
 ReactDOM.render(
-  <StyleProvider>
+  <StyleProvider renderer={renderer}>
     <ThemePicker variant="light">
       <App />
     </ThemePicker>
