@@ -12,7 +12,7 @@ export function CarCard({ carData }: CardType) {
         {/*// Create Car Card*/}
 
         <Text
-          as="h3"
+          as="p"
           variant="bates"
           subStyle="emphasis"
           extend={{

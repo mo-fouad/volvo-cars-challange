@@ -1,3 +1,24 @@
+
+## What has been done! 
+- I have added [Swiper](https://swiperjs.com/) to add slider functionalty to the application.
+- successfully used [vcc-ui](https://vcc-ui.vercel.app/) to build most of the UI in the application.
+- successfully added filter to be used to pick the cars based on the `bodyType`.
+- I have used [FaveIcons](https://vcc-ui.vercel.app/docs/packages/favicons) and [React Helmet](https://github.com/nfl/react-helmet) to add use of Volvo FavIcons in the Header.
+- Added BaseImage component using [felaJs](https://fela.js.org/) to create a general Image component so we can use it all iver the website.
+- added Accessibility measurements to make our application as accessible as possible.
+  ![Accessibility](./docs/Accessibility.png)
+  ![Chroom](./docs/chrome.png)
+- Added some unite tests using react testing library.
+- added some E2E tests using Cypress.
+- Added GitHub Actions, to run tests before merging.
+
+## What I was planing to do more!
+- Creating our own Slider, I don't like the idea of using a ready-made plugin, it usually increases the bundle size, and not always fits the need, also in the future it might be outdated. I have created a branch `fe/build-custom-carousel` and created a prototype of it, and created a PR for it [here](https://github.com/mo-fouad/volvo-cars-challange/pull/1), I just did not have time to complete it
+- Maybe using Redux or React Context API to store the data and pass it from the API to be accessible all over the application, and to make our application more organized 
+
+
+
+
 # Volvo Cars (Global Online Digital) 
 ## Front-end coding test (React)
 
