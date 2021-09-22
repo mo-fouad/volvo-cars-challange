@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { CarCard } from "components/CarCard";
+import { CarCard } from "components";
 import { Car } from "./types";
 import { getCarouselCars } from "./services";
-import { Grid, Row, useTheme, Spinner, TabNav, TabNavItem } from "vcc-ui";
+import {
+  Grid,
+  Row,
+  useTheme,
+  Spinner,
+  TabNav,
+  TabNavItem,
+  Text,
+  View,
+} from "vcc-ui";
 import { CarCarousel } from "components/CarCarousel/CarCarousel";
 
 function App() {
@@ -47,6 +56,11 @@ function App() {
   return (
     <main>
       <Grid>
+        <View extend={{ padding: "16px 0" }}>
+          <Text as={"h1"} variant="hillary">
+            Volvo Cars App
+          </Text>
+        </View>
         <Row>
           {uniqueBodyTypes && (
             <TabNav role="navigation" enableLineTransition>

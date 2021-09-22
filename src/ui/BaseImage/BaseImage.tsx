@@ -7,13 +7,13 @@ interface BaseImageTypes {
   extend?: {};
 }
 // todo : Enhance this Component to cover all of our needs
-export function BaseImage({ src, extend }: BaseImageTypes) {
+export function BaseImage({ src, extend, alt }: BaseImageTypes) {
   const { css } = useFela();
 
   return (
     <img
       src={src}
-      alt=""
+      alt={alt}
       role="presentation"
       className={extend ? css(extend) : ""}
     />

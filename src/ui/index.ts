@@ -1,1 +1,1 @@
-export { BaseImage } from "./BaseImage";
+export { BaseImage } from "./BaseImage/BaseImage";
