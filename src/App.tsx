@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CarCard } from "components";
+import { CarCard, Carousel, CarCarousel } from "components";
 import { Car } from "./types";
 import { getCarouselCars } from "./services";
 import {
@@ -12,7 +12,6 @@ import {
   Text,
   View,
 } from "vcc-ui";
-import { CarCarousel } from "components/CarCarousel/CarCarousel";
 
 function App() {
   const { color } = useTheme();
@@ -55,6 +54,16 @@ function App() {
 
   return (
     <main>
+      <Grid>
+        <Row>
+          <Carousel>
+            {updatedCars.map((car: Car) => (
+              <CarCard key={car.id} carData={car} />
+            ))}
+          </Carousel>
+        </Row>
+      </Grid>
+
       <Grid>
         <View extend={{ padding: "16px 0" }}>
           <Text as={"h1"} variant="hillary">
